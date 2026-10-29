@@ -1,0 +1,18 @@
+.new-module .page-intro { align-items: flex-end; }
+.new-module-modal { width: min(620px, 100%); }
+.new-module-form { display: flex; flex-direction: column; gap: 16px; }
+.new-module-form label { display: flex; flex-direction: column; gap: 7px; color: #4d5c56; font-size: 12px; font-weight: 750; }
+.new-module-form input, .new-module-form select { box-sizing: border-box; width: 100%; }
+.module-status { border: 1px solid var(--border); border-radius: 8px; padding: 8px; font-weight: 700; }
+.availability, .priority { display: inline-block; padding: 6px 9px; border-radius: 999px; font-size: 11px; font-weight: 800; }
+.availability.disponível { background: #e5f7ed; color: #168053; }
+.availability.indisponível { background: #ffe8e7; color: #b44545; }
+.priority-baixa { background: #edf5f1; color: #52635b; }
+.priority-média { background: #fff1c7; color: #9a6900; }
+.priority-alta { background: #ffe5e7; color: #b52f3c; }
+
+@media (max-width: 650px) {
+  .new-module .page-intro { align-items: stretch; flex-direction: column; }
+  .new-module .page-intro .primary-btn { width: 100%; }
+  .new-module-modal { padding: 18px; }
+}

@@ -1,0 +1,212 @@
+
+.money-stat {
+  font-size: 18px !important;
+  letter-spacing: -0.5px !important;
+  margin-top: 14px !important;
+}
+
+.quote-status {
+  border: 1px solid transparent;
+  border-radius: 7px;
+  padding: 7px 8px;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.quote-rascunho {
+  background: #f1f3f2;
+  color: #6a7771;
+}
+
+.quote-enviado {
+  background: #e9f1ff;
+  color: #426bb6;
+}
+
+.quote-aprovado {
+  background: #e5f7ed;
+  color: #168053;
+}
+
+.quote-recusado {
+  background: #ffe5e7;
+  color: #bf2f3d;
+}
+
+.quote-modal {
+  width: min(760px, 100%);
+}
+
+.quote-form-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.quote-modal input {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+}
+
+.items-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 24px 0 12px;
+}
+
+.items-heading h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.text-btn {
+  border: 0;
+  background: transparent;
+  color: var(--green);
+  font-weight: 800;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.quote-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quote-item-row {
+  display: grid;
+  grid-template-columns: minmax(130px, 1fr) 75px 130px 32px;
+  gap: 10px;
+  align-items: end;
+  padding: 12px;
+  background: #f8faf9;
+  border: 1px solid #edf1ef;
+  border-radius: 10px;
+}
+
+.remove-item {
+  height: 38px;
+  width: 32px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #f0dada;
+  background: white;
+  color: #bc5252;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.quote-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eaf8f1;
+  border-radius: 11px;
+  padding: 16px;
+  margin-top: 18px;
+  color: #27654c;
+  font-size: 13px;
+}
+
+.quote-total strong {
+  font-size: 22px;
+  color: #087f5b;
+}
+
+.quote-modal .form-actions {
+  margin-top: 20px;
+}
+
+.quotes-page-intro {
+  align-items: center;
+  padding: 22px 24px;
+  border: 1px solid #e2ebe6;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ffffff 0%, #f6faf8 100%);
+  box-shadow: 0 8px 24px rgba(31, 55, 45, 0.05);
+}
+
+.quotes-title {
+  min-width: 0;
+}
+
+.quotes-kicker {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #087f5b;
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 1.1px;
+}
+
+.quotes-title h2 {
+  margin: 0 0 5px;
+  color: #172820;
+}
+
+.quotes-title .muted {
+  max-width: 560px;
+  font-size: 13px;
+}
+
+.quote-modal .quote-save-btn {
+  background: #087f5b;
+  border: 2px solid #087f5b;
+  color: #ffffff;
+  opacity: 1;
+  min-height: 44px;
+  min-width: 155px;
+  box-shadow: 0 4px 12px rgba(8, 127, 91, 0.25);
+}
+
+.quote-modal .quote-save-btn:hover {
+  background: #066d4e;
+  border-color: #066d4e;
+  color: #ffffff;
+}
+
+.quote-modal .quote-save-btn:focus-visible {
+  outline: 3px solid rgba(8, 127, 91, 0.28);
+  outline-offset: 2px;
+}
+
+@media (max-width: 650px) {
+  .quotes-page-intro {
+    align-items: stretch;
+    flex-direction: column;
+    padding: 18px;
+  }
+
+  .quotes-page-intro .primary-btn {
+    width: 100%;
+  }
+
+  .quote-form-top {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-item-row {
+    grid-template-columns: 1fr 70px;
+  }
+
+  .quote-item-row .item-name {
+    grid-column: 1 / -1;
+  }
+
+  .quote-item-row .remove-item {
+    width: 100%;
+    grid-column: 1 / -1;
+  }
+
+  .money-stat {
+    font-size: 16px !important;
+  }
+}

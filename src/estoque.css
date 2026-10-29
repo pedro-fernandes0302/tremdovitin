@@ -1,0 +1,136 @@
+
+.money-stat {
+  font-size: 18px !important;
+  letter-spacing: -0.5px !important;
+  margin-top: 14px !important;
+}
+
+.stock-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 15px 17px;
+  background: #fff8e7;
+  border: 1px solid #f7e4b4;
+  border-radius: 12px;
+  color: #a26e08;
+  margin-bottom: 20px;
+}
+
+.stock-alert svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.stock-alert strong {
+  font-size: 13px;
+}
+
+.stock-alert p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #92712b;
+}
+
+.category-tag {
+  display: inline-block;
+  padding: 5px 8px;
+  background: #f0f5f2;
+  color: #52635b;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.low-stock {
+  color: #c17d0a !important;
+  font-weight: 750;
+}
+
+.movement-btn {
+  border: 1px solid #cfe9dc;
+  color: #087f5b;
+  background: #f0faf5;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.movement-btn:hover {
+  background: #dff5e9;
+}
+
+.movement-history {
+  margin-top: 20px;
+}
+
+.inline-icon {
+  vertical-align: middle;
+  margin-right: 5px;
+  color: var(--green);
+}
+
+.history-empty {
+  padding: 20px 23px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.movement-type {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+.movement-type.entry {
+  color: #168053;
+  background: #e5f7ed;
+}
+
+.movement-type.exit {
+  color: #b65353;
+  background: #ffeded;
+}
+
+.movement-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.movement-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 750;
+  color: #4d5c56;
+}
+
+.validation-error {
+  margin: 0;
+  color: #b63e3e;
+  font-size: 12px;
+}
+
+.movement-form .form-actions {
+  margin-top: 5px;
+}
+
+@media (max-width: 650px) {
+  .movement-form .form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .movement-form .form-actions button {
+    width: 100%;
+  }
+}
